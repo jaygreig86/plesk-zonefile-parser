@@ -49,7 +49,7 @@ def _parse_zone(domain,siteid):
                                                 _fulltarget = domain
                                         else:
                                                 _fulltarget = rdata.target
-                                        srv = "<Srv Protocol=\"tcp\" Port=\"%d\" Priority=\"%d\" Weight=\"%d\"/>" % (rdata.port,rdata.priority,rdata.weight)
+                                        srv = "%d %d %d" % (rdata.priority,rdata.weight,rdata.port)
                                         _record_out('SRV',host,_fulltarget,srv,siteid)
 
     except IOError as err:
@@ -76,3 +76,4 @@ if __name__ == "__main__":
         print "* obtain the site id from plesk"
         print "Use the XML-RPC API Explorer extension to paste import"
         exit()
+
