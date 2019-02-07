@@ -7,7 +7,6 @@ also.
 
 The below shows how to retrieve the site ID as you'll need this to produce the correct xml output
 ```
-<packet>
 <site>
     <get>
       <filter>
