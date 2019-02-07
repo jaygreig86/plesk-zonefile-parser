@@ -6,7 +6,7 @@ to be copy/pasted into the plesk XML-RPC API extension.  I'll produce something 
 also.
 
 The below shows how to retrieve the site ID as you'll need this to produce the correct xml output
-
+<pre>
 <packet>
 <site>
     <get>
@@ -18,7 +18,7 @@ The below shows how to retrieve the site ID as you'll need this to produce the c
        </dataset>
     </get>
 </site>
-
+</pre>
 # Requirements
 
 Built for Python version 2
